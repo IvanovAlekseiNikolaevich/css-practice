@@ -5,6 +5,7 @@
     --color-heading: #1b0760;
     --color-body: #918ca4;
 }
+
 /*  Typography */
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -79,5 +80,38 @@ a {
 @media screen and (min-width: 1024px) {
     .link-arrow {
         font-size: 0.938rem;
+    }
+}
+
+/* Badges */
+
+.badge {
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 1.25rem;
+}
+
+.badge--primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.badge--secondary {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.badge--small {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    .badge {
+        font-size: 0.938rem;
+    }
+    .badge--small {
+        font-size: 0.75rem;
     }
 }
